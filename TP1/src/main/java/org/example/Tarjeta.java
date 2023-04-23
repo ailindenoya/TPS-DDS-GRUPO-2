@@ -10,10 +10,17 @@ public class Tarjeta{
     private Date fecha;
     private String codigo;
     private Boolean verificacion;
-    private Cliente cliente;
+
+    private Double Saldo;
+    private Cliente cliente; //es necesario?
 
     public void serUsada(double valorTotal){
-        //verifica y se paga
-    };
-
+        // es verificada y usada
+    }
+    public Double getSaldo() {
+        return Saldo;
+    }
+    public void setSaldo(Double saldo) {
+        Saldo = saldo;
+    }
 }

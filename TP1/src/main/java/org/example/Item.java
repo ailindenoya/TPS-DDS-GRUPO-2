@@ -2,9 +2,28 @@ package org.example;
 
 class Item{
     private Number cantidad;
-    private Number valorPersistente;
+    private Number valor;
     private Producto producto;
-    public Number valorPresistente(){
-        return valorPersistente;
+    /*private Carrito carrito;
+
+    public void agregarItem(){
+        carrito.setProductos(carrito.productos().add(this));
+    }
+    public void quitarItem(){
+        carrito.setProductos(carrito.getProductos().remove(this));
+    }
+     */
+    public Number getValor(){
+        return valor;
     };
+
+    public Number getCantidad() {
+        return cantidad;
+    }
+
+    public Double valorTotal(){
+        Double auxiliar = this.getValor().doubleValue();
+        Double auxiliarSegundo = this.getCantidad().doubleValue();
+        return auxiliar * auxiliarSegundo;
+    }
 }
