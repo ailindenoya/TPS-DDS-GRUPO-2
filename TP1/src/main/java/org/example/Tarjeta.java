@@ -14,6 +14,9 @@ public class Tarjeta{
     private Double Saldo;
     private Cliente cliente; //es necesario?
 
+    public Tarjeta() {
+    }
+
     public void serUsada(double valorTotal){
         // es verificada y usada
     }

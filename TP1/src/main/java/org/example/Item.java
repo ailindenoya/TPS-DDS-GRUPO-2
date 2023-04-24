@@ -4,18 +4,18 @@ class Item{
     private Number cantidad;
     private Number valor;
     private Producto producto;
-    /*private Carrito carrito;
-
+    private Carrito carrito;
+    /*
     public void agregarItem(){
-        carrito.setProductos(carrito.productos().add(this));
+        carrito.setProductos(carrito.getProductos().add(this));
     }
     public void quitarItem(){
-        carrito.setProductos(carrito.getProductos().remove(this));
+        carrito.setProductos(carrito.getProductos().remove( this));
     }
-     */
+    */
     public Number getValor(){
         return valor;
-    };
+    }
 
     public Number getCantidad() {
         return cantidad;
